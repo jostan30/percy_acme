@@ -1,0 +1,16 @@
+{
+  "name": "percy-poc",
+  "version": "1.0.0",
+  "description": "POC: Percy visual testing with Playwright on static HTML pages",
+  "scripts": {
+    "serve": "node server.js",
+    "install:browsers": "npx playwright install chromium",
+    "snapshot": "percy exec -- node snapshots.js",
+    "snapshot:dry": "percy exec --dry-run -- node snapshots.js"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.30.0",
+    "@percy/playwright": "^1.0.7",
+    "playwright": "^1.48.0"
+  }
+}

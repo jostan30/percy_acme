@@ -1,0 +1,21 @@
+name: Percy Visual Tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  percy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: npx percy exec -- node snapshots.js
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
