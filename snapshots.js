@@ -22,6 +22,9 @@ const PAGES = [
 
   for (const p of PAGES) {
     await page.goto(BASE + p.path, { waitUntil: 'networkidle' });
+    // make sure every <img> has finished loading (or failed) so snapshots are stable
+    await page.evaluate(() => Promise.all([...document.images].map((i) =>
+      i.complete ? null : new Promise((r) => { i.onload = i.onerror = r; }))));
     await percySnapshot(page, p.name, { widths: [375, 768, 1280] });
     console.log('Snapshot taken:', p.name);
   }
