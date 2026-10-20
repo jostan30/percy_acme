@@ -46,8 +46,8 @@ footer { text-align: center; padding: 32px; color: var(--muted); font-size: 14px
 .products .product:nth-child(3) .thumb { object-fit: contain; background: #e2e8f0; }
 
 /* ---------- Contact ---------- */
-.page-contact form { max-width: 520px; }
-.page-contact label { display: block; margin: 16px 0 6px; font-size: 14px; }
+.page-contact form { max-width: 520px; padding: 32px; background: #fff; border: 1px solid var(--border); border-radius: 12px; }
+.page-contact label { display: block; margin: 28px 0 10px; font-size: 14px; }
 .page-contact input, .page-contact textarea { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 15px; }
 .page-contact .btn { margin-top: 20px; }
 
