@@ -5,10 +5,10 @@ visual change per page so you can confirm Percy catches each one.
 
 | Snapshot                 | Page          | Change on feature branch                          |
 |--------------------------|---------------|---------------------------------------------------|
-| Home - layout            | index.html    | LAYOUT: hero reversed + features 3-col -> 1-col   |
+| Home - layout            | index.html    | LAYOUT only: hero reversed + features 3-col -> 1-col (hero image itself unchanged) |
 | Pricing - color          | pricing.html  | COLOR: buttons + featured card blue -> orange     |
 | About - font             | about.html    | FONT: Arial -> Georgia serif, bigger body text    |
-| Products - removed el.   | products.html | ELEMENT REMOVED: badges + Add to cart on item 2   |
+| Products - images/elements | products.html | ELEMENT REMOVED (badges, Add to cart) + IMAGE swapped (Widget), IMAGE broken (Gadget), IMAGE crop changed (Gizmo) |
 | Contact - spacing/text   | contact.html  | SPACING + COPY: padding, heading and button text  |
 | FAQ - control            | faq.html      | NO CHANGE (should show 0 diffs)                   |
 
