@@ -30,8 +30,8 @@ footer { text-align: center; padding: 32px; color: var(--muted); font-size: 14px
 /* ---------- Pricing ---------- */
 .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .plan .price { font-size: 32px; font-weight: 700; margin: 8px 0 16px; }
-.plan.featured { border: 2px solid var(--primary); background: #eff6ff; }
-.page-pricing .btn { background: var(--primary); }
+.plan.featured { border: 2px solid #ea580c; background: #fff7ed; }
+.page-pricing .btn { background: #ea580c; }
 
 /* ---------- About ---------- */
 .page-about h1, .page-about h2 { font-family: Arial, Helvetica, sans-serif; }
